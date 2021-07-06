@@ -1,0 +1,98 @@
+.portfolio{
+    background: $header-color;
+    padding-top: 94px;
+}
+.portfolio__button{
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    padding: 6px 22px;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    height: 38px;
+    top: 174px;
+    background: $pink-color;
+    border-radius: 4px;
+    transition: background 250ms $transition, color 250ms $transition, box-shadow 250ms $transition;
+}
+.portfolio__button{
+
+    &:hover,
+    &:focus{
+        background: $accent-color;
+        color: $header-color;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+.portfolio__list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.portfolio__item{
+
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+}
+.container{
+
+    .portfolio-card__list{
+        padding-bottom: 94px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.portfolio-card__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.portfolio-card__link{
+    display: block;
+}
+.portfolio-card__link{
+
+    &:hover,
+    &:focus{
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+.portfolio-card__list{
+
+    .portfolio-card__box{
+        padding: 20px 24px 20px 24px;
+        border: 1px solid $cards-color;
+        border-block-start: none;
+    }
+}
+.portfolio-card__item{
+    width: 370px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.portfolio-card__item{
+
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+    &:nth-child(n + 7){
+        margin-bottom: 0;
+    }
+}
+.portfolio-card__title{
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+}
+.portfolio-card__servise{
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}

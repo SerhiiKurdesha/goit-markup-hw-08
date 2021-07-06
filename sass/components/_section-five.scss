@@ -1,0 +1,38 @@
+.companies{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.companies__title{
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+}
+.companies__list{
+    display: flex;
+    justify-content: space-around;
+}
+.companies__svg{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.companies__link{
+    display: block;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid $four-icons-color;
+    border-radius: 4px;
+    fill: $four-icons-color;
+    transition: border 250ms $transition;
+}
+.companies__link{
+
+    &:focus,
+    &:hover{
+        border-color: $accent-color;
+        fill: $accent-color;
+    }
+}
