@@ -989,7 +989,12 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: scroll;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 93px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .backdrop.is-hidden {
@@ -1003,16 +1008,26 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  position: relative;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 100%;
   background: #ffffff;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__title {
@@ -1145,10 +1160,17 @@ img {
 .form__accept {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__accept {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__contract {
