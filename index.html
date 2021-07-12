@@ -17,12 +17,11 @@
 
 <body>
 
-    <!-- <header class="page-header"> 
+    <header class="page-header"> 
         <div class="container page-header__container">
-            
-            <nav class="nav">
-                <a href="./index.html" class="logo"><span class="logostudio">Web</span>Studio</a>
+            <a href="./index.html" class="logo"><span class="logostudio">Web</span>Studio</a>
 
+            <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="" class="nav__link--current">Студия</a>
@@ -53,8 +52,59 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu-open">
+                <svg width="40" height="40">
+                    <use href="./images/x/sprite-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
-    </header>  -->
+        <div class="mobile-nav is-hidden">
+        <div class="container">
+        <button type="button" class="menu-close">
+            <svg width="40" height="40">
+                <use href="./images/x/sprite-defs.svg#icon-x"></use>
+            </svg>
+        </button>
+        
+        
+            <nav class="mobile">
+                <ul class="mobile-menu list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-contacts-media">
+                <ul class="mobile-contacts list">
+                    <li class="mobile-contacts__item">
+                        <a href="" class="mobile-contacts__link link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a href="" class="mobile-contacts__link link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-media list">
+                    <li class="mobile-media__item">
+                        <a href="" class="mobile-media__link link">Instagram</a>
+                    </li>
+                    <li class="mobile-media__item">
+                        <a href="" class="mobile-media__link link">Twitter</a>
+                    </li>
+                    <li class="mobile-media__item">
+                        <a href="" class="mobile-media__link">Facebook</a>
+                    </li>
+                    <li class="mobile-media__item">
+                        <a href="" class="mobile-media__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
 
     <main>
 
@@ -66,11 +116,11 @@
 
                 <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
             </div>
-        </section>
+        </section> 
 
         <!-- description -->
 
-        <section class="features"> 
+        <!-- <section class="features"> 
             <div class="container">
                 <ul class="features__list">
                     <li class="features__item">
@@ -101,7 +151,7 @@
                     </li>
                 </ul>
             </div>
-        </section>  
+        </section>   -->
 
         <!-- Проекты -->
 
@@ -127,7 +177,7 @@
 
         <!-- Наши сотрудники -->
 
-        <section class="team">
+        <!-- <section class="team">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
@@ -305,11 +355,11 @@
                     </li>
                 </ul>
             </div>
-        </section> 
+        </section>  -->
 
         <!-- Постоянные клиенты -->
 
-        <section class="companies">  
+        <!-- <section class="companies">  
             <div class="container">
                 <h2 class="companies__title">Постоянные клиенты</h2>
                 <ul class="companies__list">
@@ -360,13 +410,13 @@
                 </ul>
 
             </div>
-        </section>  
+        </section>   -->
 
     </main>
 
     <!-- Подвал -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="contacts__list">
                 <a href="./index.html" class="logo-down"><span class="logostudio">Web</span>Studio</a>
@@ -427,7 +477,7 @@
                 </button>
             </form>
         </div>
-    </footer>  
+    </footer>   -->
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -478,7 +528,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-
+    <script src="./js/menu.js"></script>
 
 </body>
 

@@ -1,7 +1,7 @@
 .page-header{
     background: $header-color;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid $milk-color;
 }
 .page-header{
@@ -13,6 +13,8 @@
 }
 .page-header__container{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav__link{
   text-decoration: none;
@@ -26,6 +28,11 @@
   display: flex;
   margin: 0;
   margin-left: 93px;
+  display: none;
+
+  @media screen and (min-width: 768px){
+      display: block;
+  }
 }
 .nav__item{
 
@@ -42,6 +49,11 @@
    display: flex;
    margin-left: auto;
    align-items: center;
+   display: none;
+
+   @media screen and (min-width: 768px){
+       display: block;
+   }
 }
 .contact__item{
 
