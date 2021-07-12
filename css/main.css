@@ -69,6 +69,13 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 26px;
+    padding-bottom: 25px;
+  }
+}
+
 .page-header.container {
   display: flex;
   align-items: center;
@@ -98,7 +105,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .nav__list {
-    display: block;
+    display: flex;
+    margin-left: 88px;
   }
 }
 
@@ -122,6 +130,12 @@ img {
 @media screen and (min-width: 768px) {
   .contact {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
   }
 }
 
