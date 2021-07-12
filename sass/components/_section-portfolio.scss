@@ -28,13 +28,26 @@
 }
 .portfolio__list{
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     margin-bottom: 50px;
+
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px){
+        justify-content: center;
+    }
 }
 .portfolio__item{
 
     &:not(:last-child){
         margin-right: 8px;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: 768px){
+        &:not(:last-child){
+            margin-bottom: 0;
+        }
     }
 }
 .container{
