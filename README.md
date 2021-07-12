@@ -1,1 +1,3 @@
-# goit-markup-hw-08
+&:not(:first-child){
+        margin-left: 50px;
+    }

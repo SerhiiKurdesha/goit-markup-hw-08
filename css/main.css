@@ -72,6 +72,13 @@ img {
 @media screen and (min-width: 768px) {
   .page-header {
     padding-top: 26px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 26px;
     padding-bottom: 25px;
   }
 }
@@ -139,8 +146,25 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contact__item {
+    margin-bottom: 10px;
+  }
+}
+
 .contact__item:not(:first-child) {
-  margin-left: 50px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+}
+
+.contact__item:not(:last-child) {
+  margin-left: 0px;
 }
 
 .nav__link:hover, .nav__link:focus {
