@@ -372,7 +372,7 @@ img {
 
 .hero {
   max-width: 1600px;
-  height: auto;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background: #2F303A;
@@ -409,6 +409,8 @@ img {
 @media (min-width: 1000px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-1200-min.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
