@@ -42,10 +42,6 @@
     @media screen and (min-width: 1200px){
             flex-basis: calc((100% - 120px) / 4);
     }
-
-    &:not(:last-child){
-        // margin-right: 30px;
-    }
 }
 .team__box{
     padding-top: 30px;
@@ -72,7 +68,7 @@
 }
 .team-social{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .team-social__link{
 

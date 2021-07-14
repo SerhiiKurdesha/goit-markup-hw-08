@@ -4,23 +4,23 @@
     margin-left: auto;
     margin-right: auto;
     background: $footer-color-line;
-    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-480-min.jpg);
+    // background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-480-min.jpg);
     background-repeat: no-repeat;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
 
-    @media screen and (min-width: 768px){
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-768-min.jpg);
-    }
+    // @media screen and (min-width: 768px){
+    //     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-768-min.jpg);
+    // }
 
-    @media screen and (min-width: 1200px){
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-1200-min.jpg);
-        width: 1600px;
-        height: 600px;
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
+    // @media screen and (min-width: 1200px){
+    //     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-1200-min.jpg);
+    //     width: 1600px;
+    //     height: 600px;
+    //     padding-top: 200px;
+    //     padding-bottom: 200px;
+    // }
 }
 .hero__title{
     margin: 0;
