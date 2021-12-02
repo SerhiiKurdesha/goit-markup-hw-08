@@ -4,7 +4,6 @@
     margin-left: auto;
     margin-right: auto;
     background: $footer-color-line;
-    // background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-480-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,46 +11,56 @@
     padding-top: 118px;
     padding-bottom: 118px;
 
-    // @media screen and (min-width: 768px){
-    //     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-768-min.jpg);
-    // 
-
-    // @media screen and (min-width: 1200px){
-    //     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-1200-min.jpg);
-    //     width: 1600px;
-    //     height: 600px;
-    //     padding-top: 200px;
-    //     padding-bottom: 200px;
-    // }
-}
-.hero{
-    background-image: url(../images/format/hero1x.jpg);
-}
-@media (min-resolution: 2dppx){
-    .hero{
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero1x-2.jpg);
-    }
-}
-@media (min-width: 768px){
-    .hero{
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero2x.jpg);    
-    }
-
-    @media (min-resolution: 2dppx){
-        .hero{
-            background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero2x-2.jpg);
-        }
-    }
-}
-@media (min-width: 1200px){
-    .hero{
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/format/hero-1200-min.jpg);
+    @media screen and (min-width: 1200px){
         padding-top: 200px;
         padding-bottom: 200px;
     }
 }
+.hero{
+    max-height: 400px;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/format/mobile@1x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 3200px;
+    margin: 0 auto;
+
+    @media (min-device-pixel-ratio: 2) and (max-width: 479px), 
+    (min-resolution: 192dpi) and (max-width: 479px), 
+    (min-resolution: 2dppx) and (max-width: 479px){
+        max-height: 800px;
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/format/mobile@2x.jpg');
+    }
+
+    // ===========================
+
+    @media screen and (min-width: 480px){
+        max-height: 400px;
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/format/tab@1x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 480px),
+    (min-resolution: 192dpi) and (min-width: 480px),
+    (min-resolution: 2dppx) and (min-width: 480px){
+        max-height: 800px;
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/format/tab@2x.jpg');
+    }
+
+    // ============================
+
+    @media screen and (min-width: 1200px){
+        max-height: 600px;
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/format/desk@1x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px){
+        max-height: 1200px;
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/format/desk@2x.jpg');
+    }
+}
 .hero__title{
-    margin: 0;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
@@ -59,12 +68,6 @@
     color: $header-color;
     text-align: center;
     text-transform: uppercase;
-
-    // @media screen and (min-width: 768px){
-    //     font-weight: 900;
-    //     font-size: 26px;
-    //     line-height: 1.61;
-    // }
 
     @media screen and (min-width: 1200px){
         font-size: 44px;
