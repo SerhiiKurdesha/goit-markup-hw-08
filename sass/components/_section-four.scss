@@ -70,6 +70,12 @@
     display: flex;
     justify-content: center;
 }
+.team-social__item{
+    
+    &:not(:last-child){
+        margin-right: 10px;
+    }
+}
 .team-social__link{
 
     &:hover,

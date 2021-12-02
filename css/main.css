@@ -722,6 +722,10 @@ img {
   justify-content: center;
 }
 
+.team-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team-social__link:hover, .team-social__link:focus {
   background: #2196f3;
   fill: #EEEEEE;
