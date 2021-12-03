@@ -27,23 +27,23 @@
     align-items: center;
 }
 .nav__link{
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $title-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
 }
 .nav__list{
-  display: flex;
-  margin: 0;
-  margin-left: 93px;
-  display: none;
+    display: flex;
+    margin: 0;
+    margin-left: 93px;
+    display: none;
 
-  @media screen and (min-width: 768px){
-      display: flex;
-      margin-left: 88px;
-  }
+    @media screen and (min-width: 768px){
+        display: flex;
+        margin-left: 88px;
+    }
 }
 .nav__item{
 
@@ -52,23 +52,23 @@
     }
 }
 .nav{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .contact{
-   display: flex;
-   margin-left: auto;
-   align-items: center;
-   display: none;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    display: none;
 
-   @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px){
        display: block;
-   }
+    }
 
-   @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px){
        display: flex;
-   }
+    }
 }
 .contact__item{
 
@@ -120,15 +120,15 @@
     
 }
 .contact__link{
-   display: flex;
-   align-items: center;
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 1.14;
-   letter-spacing: 0.02em;
-   color: $primary-text-color;
-   fill: $primary-text-color;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    fill: $primary-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact__icon{
     margin-right: 10px;
@@ -155,5 +155,5 @@
     
 }
 .nav__link--current{
-        position: relative;    
+    position: relative;    
 }

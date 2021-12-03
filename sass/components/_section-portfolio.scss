@@ -27,9 +27,8 @@
     }
 }
 .portfolio__list{
-    display: flex;
     margin-bottom: 50px;
-
+    display: flex;
     flex-wrap: wrap;
 
     @media screen and (min-width: 768px){
@@ -58,14 +57,11 @@
     }
 }
 .portfolio-card__list{
-    // display: flex;
     flex-wrap: wrap;
     margin: 0;
 }
 .portfolio-card__link{
     display: block;
-}
-.portfolio-card__link{
 
     &:hover,
     &:focus{
@@ -77,8 +73,6 @@
         display: flex;
         justify-content: space-between;
     }
-
-    @media screen and (min-width: 1200px){}
 }
 .portfolio-card__box{
         padding: 20px 24px 20px 24px;
